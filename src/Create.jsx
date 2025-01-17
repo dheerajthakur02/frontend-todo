@@ -6,7 +6,7 @@ function Create({ setTodos }) {
 
     const handleAdd = () => {
         if (task.trim()) {
-            axios.post('http://localhost:3001/add', { task })
+            axios.post('https://server-todo-phi.vercel.app/add', { task })
                 .then(result => {
                     setTask('');
                     setTodos(prevTodos => [...prevTodos, result.data]);
