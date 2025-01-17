@@ -34,7 +34,7 @@ function Home() {
 
     return (
         <div className='home'>
-            <h2>Task List</h2>
+            <h2>Todo List</h2>
             <Create setTodos={setTodos} />
             {todos.length === 0 ? (
                 <div><h2>No record</h2></div>
